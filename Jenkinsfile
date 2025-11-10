@@ -53,6 +53,7 @@ pipeline {
                   npm install netlify-cli
                   node_modules/.bin/netlify --version
                   echo "deploying to :$NETLIFY_SITE_ID"
+                  node_modules/.bin/netlify deploy --dir=build --prod
                 '''
             }
         }
